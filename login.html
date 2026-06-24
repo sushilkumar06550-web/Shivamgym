@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Login - Shivam Gym</title>
+<title>Login</title>
 
 <style>
 body{
 margin:0;
 font-family:Arial;
-background:#0f172a;
-color:white;
+background:white;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -17,7 +15,7 @@ height:100vh;
 }
 
 .box{
-background:rgba(255,255,255,0.1);
+background:#f1f5f9;
 padding:30px;
 border-radius:10px;
 width:300px;
@@ -27,35 +25,44 @@ text-align:center;
 input{
 width:100%;
 padding:10px;
-margin:10px 0;
-border:none;
-border-radius:5px;
+margin:8px 0;
 }
 
-button{
+.btn-blue{
 width:100%;
-padding:10px;
-background:#facc15;
+padding:12px;
+background:#38bdf8;
 border:none;
-font-weight:bold;
+color:white;
 cursor:pointer;
 }
 
-a{color:#facc15;text-decoration:none;}
+.btn-yellow{
+width:100%;
+padding:12px;
+background:#facc15;
+border:none;
+cursor:pointer;
+margin-top:5px;
+}
 </style>
 </head>
 
 <body>
 
 <div class="box">
-<h2>Gym Login</h2>
+<h2>Member Login</h2>
 
-<input type="text" placeholder="Name">
-<input type="password" placeholder="Password">
+<input placeholder="Name">
+<input placeholder="Password" type="password">
 
-<button onclick="alert('Login Successful 💪')">Login</button>
+<button class="btn-blue" onclick="alert('Welcome 💪 Member Access')">
+Login
+</button>
 
-<p><a href="index.html">Back to Home</a></p>
+<button class="btn-yellow" onclick="window.location.href='index.html'">
+Home
+</button>
 </div>
 
 </body>
