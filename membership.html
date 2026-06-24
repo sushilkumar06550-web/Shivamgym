@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Join Gym</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.box{
+padding:30px;
+background:#f1f5f9;
+border-radius:10px;
+width:320px;
+text-align:center;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+.btn-blue{
+width:100%;
+padding:12px;
+background:#38bdf8;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.btn-yellow{
+width:100%;
+padding:12px;
+background:#facc15;
+border:none;
+cursor:pointer;
+margin-top:5px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Join Membership 💪</h2>
+
+<input placeholder="Name">
+<input placeholder="Age">
+
+<select>
+<option>Basic - ₹999</option>
+<option>Standard - ₹1499</option>
+<option>Pro - ₹1999</option>
+</select>
+
+<button class="btn-blue" onclick="alert('Request Sent 💪')">Join</button>
+
+<button class="btn-yellow" onclick="window.location.href='index.html'">Home</button>
+</div>
+
+</body>
+</html>
