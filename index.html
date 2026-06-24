@@ -1,27 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shivam Gym</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shivam Gym</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial;
+background:linear-gradient(120deg,#0f172a,#1e3a8a,#facc15);
+color:white;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:15px 25px;
+background:rgba(0,0,0,0.6);
+position:sticky;
+top:0;
+}
+nav h1{color:#facc15;}
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+.hero h2{font-size:50px;color:#facc15;}
+.btn{
+padding:12px 25px;
+background:#facc15;
+border:none;
+font-weight:bold;
+cursor:pointer;
+border-radius:8px;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+.card{
+display:inline-block;
+margin:10px;
+padding:20px;
+background:rgba(255,255,255,0.1);
+border-radius:10px;
+width:200px;
+}
+
+footer{
+text-align:center;
+background:black;
+padding:15px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>🏋️ SHIVAM GYM</h1>
-  <p>Transform Your Body. Transform Your Life.</p>
-</header>
+<nav>
+<h1>SHIVAM GYM</h1>
+<div>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="login.html">Login</a>
+</div>
+</nav>
 
-<section class="hero">
-  <h2>Welcome to Shivam Gym</h2>
-  <p>Modern Equipment • Certified Trainers • Affordable Membership</p>
-  <button>Join Now</button>
+<div class="hero" id="home">
+<h2>BUILD YOUR BODY 💪</h2>
+<p>India No.1 Fitness Gym</p>
+<button class="btn" onclick="window.location.href='login.html'">Join Now</button>
+</div>
+
+<section id="services">
+<h2>Services</h2>
+<div class="card">Weight Training</div>
+<div class="card">Cardio</div>
+<div class="card">Diet Plan</div>
+<div class="card">Trainer</div>
 </section>
 
-<footer>
-  <p>© 2026 Shivam Gym. All Rights Reserved.</p>
-</footer>
+<footer>© 2026 Shivam Gym</footer>
 
 </body>
 </html>
